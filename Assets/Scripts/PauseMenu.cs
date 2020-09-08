@@ -4,8 +4,9 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     public GameManager gameManager;
-    public GameObject ui;
-    public SceneFader sceneFader;
+
+    [SerializeField] private GameObject ui;
+    [SerializeField] private SceneFader sceneFader;
 
     private void Update()
     {

@@ -61,11 +61,10 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.20754719, g: 0.20754719, b: 0.20754719, a: 0.74509805}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
@@ -92,7 +91,7 @@ GameObject:
   - component: {fileID: 8896516264575475512}
   - component: {fileID: 7800976398908166316}
   m_Layer: 0
-  m_Name: MiddleEnemy
+  m_Name: HardEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -201,8 +200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bb5b60afd5a08d41bb98fc15a3b2eb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSpeed: 7
-  speed: 15
+  startSpeed: 8
   worth: 25
   deathEffect: {fileID: 6368169690903417794, guid: 08a5be17fabfa754884880a451270683,
     type: 3}
@@ -379,11 +377,10 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.4205681, g: 0.8679245, b: 0.2988608, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 3d01d8c23f998964dbb5895d4580f9ff, type: 3}
   m_Type: 3
   m_PreserveAspect: 0

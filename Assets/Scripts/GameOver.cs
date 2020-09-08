@@ -1,12 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
-    public GameObject shopUI;
-    public SceneFader sceneFader;
+    [SerializeField] private GameObject shopUI;
+    [SerializeField] private SceneFader sceneFader;
 
 
     private void OnEnable()

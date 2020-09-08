@@ -61,11 +61,10 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.20754719, g: 0.20754719, b: 0.20754719, a: 0.74509805}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
@@ -202,11 +201,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startSpeed: 20
-  speed: 15
   worth: 20
   deathEffect: {fileID: 6368169690903417794, guid: cb60a50b370a61745b3827e7c0bfff03,
     type: 3}
-  startHealth: 15
+  startHealth: 75
   healthBar: {fileID: 1370421722303836383}
 --- !u!114 &7800976398908166316
 MonoBehaviour:
@@ -379,11 +377,10 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.4205681, g: 0.8679245, b: 0.2988608, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 3d01d8c23f998964dbb5895d4580f9ff, type: 3}
   m_Type: 3
   m_PreserveAspect: 0

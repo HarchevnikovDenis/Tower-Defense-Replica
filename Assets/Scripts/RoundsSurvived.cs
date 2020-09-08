@@ -1,11 +1,10 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class RoundsSurvived : MonoBehaviour
 {
-    public Text roundsText;
+    [SerializeField] private Text roundsText;
 
     private void OnEnable()
     {

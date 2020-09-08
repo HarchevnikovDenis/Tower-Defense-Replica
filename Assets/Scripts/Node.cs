@@ -2,8 +2,8 @@
 
 public class Node : MonoBehaviour
 {
-    public Color hoverColor;                    //цвет объекта при наведении мыши
-    public Color notEnoughMoneyColor;           //цвет выделение при недостаточном количестве денег
+    [SerializeField] private Color hoverColor;                    //цвет объекта при наведении мыши
+    [SerializeField] private Color notEnoughMoneyColor;           //цвет выделение при недостаточном количестве денег
 
     [HideInInspector]
     public GameObject turret;                  //имеется ли на node-объекте турель
@@ -16,7 +16,7 @@ public class Node : MonoBehaviour
     private Color startColor;                   //обычный цвет объекта
 
     private BuildManager buildManager;
-    public Vector3 positionOffset;              //сдвиг от позиции node для постройти турели
+    public Vector3 positionOffset;              //сдвиг от позиции node для постройки турели
 
     private void Start()
     {

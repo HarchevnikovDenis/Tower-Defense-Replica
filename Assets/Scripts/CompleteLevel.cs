@@ -1,13 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CompleteLevel : MonoBehaviour
 {
-    public SceneFader sceneFader;
+    [SerializeField] private SceneFader sceneFader;
 
-    public string nextLevel = "Level02";
-    public int levelToUnlock = 2;
+    [SerializeField] private string nextLevel;
+    [SerializeField] private int levelToUnlock;
 
     public void Menu()
     {
@@ -16,7 +14,16 @@ public class CompleteLevel : MonoBehaviour
 
     public void Complete()
     {
-        PlayerPrefs.SetInt("levelReached", levelToUnlock);
+        OpenNextLevel();
         sceneFader.FadeTo(nextLevel);
+    }
+
+    private void OpenNextLevel()
+    {
+        int currentOpenedLevel = PlayerPrefs.GetInt("levelReached");
+        if(currentOpenedLevel < levelToUnlock)
+        {
+            PlayerPrefs.SetInt("levelReached", levelToUnlock);
+        }
     }
 }

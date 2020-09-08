@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Turret : MonoBehaviour
 {
@@ -8,28 +6,27 @@ public class Turret : MonoBehaviour
     private Enemy targetEnemy;
 
     [Header("General")]
-    public float range = 15.0f;         //радиус поиска врага
+    [SerializeField] private float range = 15.0f;           //радиус поиска врага
 
     [Header("Use bullets(default)")]
-    public GameObject bulletPrefab;
-    public float fireRate = 1.0f;       //кол-во выстрелов в секунду
-    private float fireCountDown = 0.0f; //счетчик времени
+    [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private float fireRate = 1.0f;         //кол-во выстрелов в секунду
+    private float fireCountDown = 0.0f;                     //счетчик времени
 
     [Header("Use laser")]
-    public bool useLaser = false;
+    [SerializeField] private bool useLaser = false;
 
-    public int damageOverTime = 30;
-    public float amount = 0.5f;
+    [SerializeField] private int damageOverTime = 30;
+    [SerializeField] private float amount = 0.5f;
 
-    public LineRenderer lineRenderer;
-    public ParticleSystem impactEffect;
+    [SerializeField] private LineRenderer lineRenderer;
+    [SerializeField] private ParticleSystem impactEffect;
 
     [Header("Unity Setup Fields")]
-    public string enemyTag = "Enemy";
-    public float turnSpeed = 10.0f;
+    [SerializeField] private string enemyTag = "Enemy";
+    [SerializeField] private float turnSpeed = 10.0f;
 
-    public Transform firePoint;
-
+    [SerializeField] private Transform firePoint;
 
     private void Start()
     {

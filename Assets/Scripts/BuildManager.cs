@@ -3,8 +3,9 @@
 public class BuildManager : MonoBehaviour
 {
     public static BuildManager instance;
+
+    [SerializeField] private NodeUI nodeUI;
     private Node selectedNode;
-    public NodeUI nodeUI;
 
     private TurretBlueprint turretToBuild;
     public GameObject buildEffect;

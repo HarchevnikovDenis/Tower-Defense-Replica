@@ -1,11 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 
 public class MainMenu : MonoBehaviour
 {
-    public SceneFader sceneFader;
+    [SerializeField] private SceneFader sceneFader;
+
     public void Play(string sceneName)
     {
         sceneFader.FadeTo(sceneName);

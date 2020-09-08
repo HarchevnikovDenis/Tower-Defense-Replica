@@ -4,16 +4,16 @@ using UnityEngine.UI;
 public class Enemy : MonoBehaviour
 {
     public float startSpeed = 10.0f;
-    [HideInInspector]
-    public float speed;                     //скорость передвижения
-    public int worth = 50;                  //цена за уничтожение врага
-    public GameObject deathEffect;          //эффект после уничтожения врага
+    [SerializeField] private int worth = 50;                      //цена за уничтожение врага
+    [SerializeField] private GameObject deathEffect;              //эффект после уничтожения врага
 
-    public float startHealth = 100.0f;
+    [SerializeField] private float startHealth = 100.0f;
     private float health;
 
     [Header("Unity Stuff")]
     public Image healthBar;
+
+    public float speed { get; set; }                              //скорость передвижения
 
     private void Start()
     {

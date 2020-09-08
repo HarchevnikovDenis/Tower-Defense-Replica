@@ -4,9 +4,9 @@ public class Shop : MonoBehaviour
 {
     private BuildManager buildManager;
 
-    public TurretBlueprint standartTurret;
-    public TurretBlueprint missileLauncher;
-    public TurretBlueprint lazer;
+    [SerializeField] private TurretBlueprint standartTurret;
+    [SerializeField] private TurretBlueprint missileLauncher;
+    [SerializeField] private TurretBlueprint lazer;
 
     private void Start()
     {

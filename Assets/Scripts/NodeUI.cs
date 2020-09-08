@@ -3,11 +3,11 @@ using UnityEngine.UI;
 
 public class NodeUI : MonoBehaviour
 {
-    public GameObject ui;
+    [SerializeField] private GameObject ui;
+    [SerializeField] private Text upgradeCost;
+    [SerializeField] private Button upgradeButton;
+    [SerializeField] private Text sellAmount;
     private Node target;
-    public Text upgradeCost;
-    public Button upgradeButton;
-    public Text sellAmount;
 
     public void SetTarget(Node _target)
     {

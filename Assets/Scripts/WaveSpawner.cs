@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,18 +6,17 @@ public class WaveSpawner : MonoBehaviour
 {
     public static int EnemiesAlive = 0;
 
-    public Wave[] waves;
+    [SerializeField] private Wave[] waves;
     private Transform spawnPoint;               //точка спауна
 
-    public float timebetweenWaves = 5.4f;       //время между волнами
+    [SerializeField] private float timebetweenWaves = 5.4f;       //время между волнами
     private float countDown = 2.0f;             //переменная для отсчета времени
 
     private int waveIndex = 0;                  //индекс текущей волны
 
-    [SerializeField] 
-    private Text waveCountDownText;             //текст отсчета времени 
+    [SerializeField] private Text waveCountDownText;             //текст отсчета времени 
 
-    public GameManager gameManager;
+    [SerializeField] private GameManager gameManager;
 
     private void Start()
     {
